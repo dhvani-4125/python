@@ -3,32 +3,43 @@ from tupleops import TupleDemo
 from dictops import DictDemo
 from setops import SetDemo
 
-# List object
-list_obj = ListDemo()
-list_obj.create_list()
-list_obj.add_element()
-list_obj.remove_element()
+print("LIST:")
+l = ListDemo()
+l.display()
+l.append_element()
+l.insert_element()
+l.remove_element()
+l.pop_element()
+l.reverse_list()
+l.sort_list()
+l.count_element()
+l.index_element()
+l.length()
 
-print()
+print("\nTUPLE:")
+t = TupleDemo()
+t.display()
+t.count_element()
+t.index_element()
+t.length()
+t.maximum()
+t.minimum()
 
-# Tuple object
-tuple_obj = TupleDemo()
-tuple_obj.create_tuple()
-tuple_obj.length()
-tuple_obj.access_element()
+print("\nDICTIONARY: ")
+d = DictDemo()
+d.display()
+d.keys_method()
+d.values_method()
+d.items_method()
+d.get_value()
+d.update_value()
+d.pop_item()
+d.pop_last()
 
-print()
-
-# Dictionary object
-dict_obj = DictDemo()
-dict_obj.create_dict()
-dict_obj.add_item()
-dict_obj.display_keys()
-
-print()
-
-# Set object
-set_obj = SetDemo()
-set_obj.create_set()
-set_obj.add_element()
-set_obj.remove_element()
+print("\nSET: ")
+s = SetDemo()
+s.display()
+s.add_element()
+s.remove_element()
+s.discard_element()
+s.pop_element()
