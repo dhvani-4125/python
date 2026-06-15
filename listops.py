@@ -9,47 +9,47 @@ class ListDemo:
             self.my_list.append(value)
 
     def display(self):
-        print("List:", self.my_list)
+        return self.my_list
 
     def append_element(self):
         value = input("Enter element to append: ")
         self.my_list.append(value)
-        print(self.my_list)
+        return self.my_list
 
     def insert_element(self):
         index = int(input("Enter index: "))
         value = input("Enter value: ")
         self.my_list.insert(index, value)
-        print(self.my_list)
+        return self.my_list
 
     def remove_element(self):
         value = input("Enter element to remove: ")
         self.my_list.remove(value)
-        print(self.my_list)
+        return self.my_list
 
     def pop_element(self):
         self.my_list.pop()
-        print(self.my_list)
+        return self.my_list
 
     def reverse_list(self):
         self.my_list.reverse()
-        print(self.my_list)
+        return self.my_list
 
     def sort_list(self):
         self.my_list.sort()
-        print(self.my_list)
+        return self.my_list
 
     def count_element(self):
         value = input("Enter value to count: ")
-        print(self.my_list.count(value))
+        return self.my_list.count(value)
 
     def index_element(self):
         value = input("Enter value to find index: ")
-        print(self.my_list.index(value))
+        return self.my_list.index(value)
 
     def length(self):
-        print(len(self.my_list))
+        return len(self.my_list)
 
     def clear_list(self):
         self.my_list.clear()
-        print(self.my_list)
+        return self.my_list
